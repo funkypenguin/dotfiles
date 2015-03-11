@@ -10,6 +10,7 @@ antigen-bundle vagrant
 antigen-bundle docker
 antigen-bundle rsync
 antigen-bundle tmux
+antigen bundle nojhan/liquidprompt
 antigen-bundle zsh-users/zsh-syntax-highlighting
 antigen-bundle zsh-users/zsh-history-substring-search
 
