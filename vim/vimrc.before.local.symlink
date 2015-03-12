@@ -1,0 +1,22 @@
+" Options that determine spf13 behavior
+
+" Bundles {
+
+  " Choose bundle groups from spf13:
+  let g:spf13_bundle_groups=['general', 'python', 'programming', 'javascript', 'html', 'misc']
+
+  " Don't useCSApprox (we're using Solarized with 16 colors)"
+  let g:CSApprox_loaded = 1
+
+" }
+
+" Plugins {
+
+  " Airline {
+
+    " Use fancy symbols in airline
+    let g:airline_powerline_fonts=1
+
+  " }
+
+" }

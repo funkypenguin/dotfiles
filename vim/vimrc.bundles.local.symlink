@@ -1,0 +1,36 @@
+" vim: set foldmethod=marker foldmarker={,} foldlevel=0
+
+Bundle 'recover.vim'
+Bundle 'visual-increment'
+Bundle 'chikamichi/mediawiki.vim'
+Bundle 'rking/ag.vim'
+Bundle 'camelcasemotion'
+Bundle 'wincent/Command-T'
+Bundle 'sjl/gundo.vim'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'tpope/vim-speeddating'
+Bundle 'tpope/vim-unimpaired'
+Bundle 'chrisbra/NrrwRgn'
+Bundle 'djoshea/vim-matlab-fold'
+Bundle 'xolox/vim-session'
+Bundle 'mbadran/headlights'
+Bundle 'https://github.com/tshirtman/vim-cython.git'
+Bundle 'vim-misc'
+Bundle 'vim-stylus'
+Bundle 'operator-camelize'
+Bundle 'operator-user'
+Bundle 'SyntaxMotion.vim'
+Bundle 'argtextobj.vim'
+Bundle 'vim-indent-object'
+Bundle 'sudo.vim'
+Bundle 'Rename'
+Bundle 'pyrex.vim'
+Bundle 'chase/vim-ansible-yaml'
+
+" Disabled
+" ========
+" Bundle 'LaTeX-Suite-aka-Vim-LaTeX
+"
+" Already in spf13
+" ================
+" Bundle 'kien/ctrlp.vim'
