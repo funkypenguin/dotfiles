@@ -48,7 +48,9 @@
   endif
 
   " relative line numbering
-  set relativenumber
+  if version >= 730
+    set relativenumber
+  endif
 
   " no spellchecking
   set nospell
