@@ -3,6 +3,7 @@
     showIndentGuide: true
     fontFamily: "Menlo"
     invisibles: {}
+    softWrapAtPreferredLineLength: true
   core:
     ignoredNames: [
       ".bundle"
@@ -37,9 +38,9 @@
   jekyll: {}
   "markdown-writer":
     siteEngine: "jekyll"
-    siteUrl: "http://funkypenguin.github.io"
-    urlForPosts: "http://funkypenguin.github.io/assets/posts.json"
-    urlForTags: "http://funkypenguin.github.io/assets/tags.json"
-    urlForCategories: "http://funkypenguin.github.io/assets/categories.json"
-    siteLocalDir: "/Users/david/Documents/blog/"
+    siteUrl: "https://www.funkypenguin.co.nz"
+    urlForPosts: "https://www.funkypenguin.co.nz/assets/posts.json"
+    urlForTags: "https://www.funkypenguin.co.nz/assets/tags.json"
+    urlForCategories: "https://www.funkypenguin.co.nz/assets/categories.json"
+    siteLocalDir: "/Users/david/Documents/Projects/blog/"
     siteImagesDir: "images/"
