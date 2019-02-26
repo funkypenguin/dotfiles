@@ -1,0 +1,124 @@
+plex:
+  text: "Plex"
+  url: "https://geek-cookbook.funkypenguin.co.nz/recipies/plex/"
+  title: ""
+nextcloud:
+  text: "NextCloud"
+  url: "/recipes/nextcloud/"
+  title: ""
+autopirate:
+  text: "autopirate"
+  url: "/recipies/autopirate/start/"
+  title: ""
+emby:
+  text: "Emby"
+  url: "/recipies/emby/"
+  title: ""
+sabnzbd:
+  text: "SABnzbd"
+  url: "/recipies/autopirate/sabnzbd/"
+  title: ""
+nzbget:
+  text: "NZBGet"
+  url: "/recipies/autopirate/nzbget.md"
+  title: ""
+rtorrent:
+  text: "RTorrent"
+  url: "http://rakshasa.github.io/rtorrent"
+  title: ""
+radarr:
+  text: "Radarr"
+  url: "/recipies/autopirate/radarr/"
+  title: ""
+mylar:
+  text: "Mylar"
+  url: "/recipies/autopirate/mylar/"
+  title: ""
+"lazy librarian":
+  text: "Lazy Librarian"
+  url: "/recipies/autopirate/lazylibrarian/"
+  title: ""
+headphones:
+  text: "Headphones"
+  url: "/recipies/headphones"
+  title: ""
+nzbhydra:
+  text: "NZBHydra"
+  url: "/recipies/autopirate/nzbhydra/"
+  title: ""
+ombi:
+  text: "Ombi"
+  url: "/recipies/autopirate/ombi/"
+  title: ""
+binance:
+  text: "Binance"
+  url: "https://www.binance.com/?ref=15312815"
+  title: ""
+coinbase:
+  text: "Coinbase"
+  url: "https://www.coinbase.com/join/5a4d1ed0ee3de40195a695c8"
+  title: ""
+amd:
+  text: "AMD"
+  url: "/recipies/cryptominer/amd-gpu/"
+  title: ""
+nvidia:
+  text: "Nvidia"
+  url: "/recipies/cryptominer/nvidia-gpu/"
+  title: ""
+wallets:
+  text: "wallets"
+  url: "/recipies/cryptominer/wallet/"
+  title: ""
+"mining rig":
+  text: "mining rig"
+  url: "/recipies/cryptominer/mining-rig/"
+  title: ""
+minerhotel:
+  text: "Minerhotel"
+  url: "/recipies/crytominer/minerhotel/"
+  title: ""
+"mining pools":
+  text: "mining pools"
+  url: "/recipies/cryptominer/mining-pool/"
+  title: ""
+wallet:
+  text: "wallet"
+  url: "/recipies/cryptominer/wallet/"
+  title: ""
+exchanges:
+  text: "exchanges"
+  url: "/recipies/cryptominer/exchange/"
+  title: ""
+kitchen:
+  text: "kitchen"
+  url: "http://discourse.geek-kitchen.funkypenguin.co.nz/"
+  title: ""
+lidarr:
+  text: "Lidarr"
+  url: "/recipies/autopirate/lidarr/"
+  title: ""
+gollum:
+  text: "Gollum"
+  url: "/recipies/gollum/"
+  title: ""
+keycloak:
+  text: "KeyCloak"
+  url: "https://www.keycloak.org/"
+  title: ""
+oauth_proxy:
+  text: "oauth_proxy"
+  url: "/reference/oauth_proxy/"
+  title: ""
+openldap:
+  text: "OpenLDAP"
+  url: "/recipes/openldap/"
+  title: ""
+digitalocean:
+  text: "DigitalOcean"
+  url: "https://m.do.co/c/e33b78ad621b"
+  title: ""
+minio:
+  text: "Minio"
+  url: "/recipes/minio/"
+  title: ""

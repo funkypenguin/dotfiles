@@ -1,10 +1,13 @@
 "*":
-  editor:
-    showIndentGuide: true
-    fontFamily: "Menlo"
-    invisibles: {}
-    softWrapAtPreferredLineLength: true
   core:
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "jekyll-new-post"
+      "jekyll"
+    ]
+    hideGitIgnoredFiles: true
     ignoredNames: [
       ".bundle"
       ".git"
@@ -13,18 +16,30 @@
       "tmp"
       "vendor"
     ]
+    telemetryConsent: "no"
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "atom-dark-ui"
+      "atom-dark-syntax"
     ]
-    hideGitIgnoredFiles: true
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-      "jekyll-new-post"
-      "jekyll"
-    ]
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 12
+    invisibles: {}
+    showIndentGuide: true
+    softWrapAtPreferredLineLength: true
+  jekyll: {}
+  "markdown-writer":
+    relativeImagePath: true
+    renameImageOnCopy: true
+    siteEngine: "jekyll"
+    siteImagesDir: "images/"
+    siteLocalDir: "/Users/davidy/Documents/Personal/Projects/blog/"
+    siteUrl: "https://www.funkypenguin.co.nz"
+    urlForCategories: "https://www.funkypenguin.co.nz/assets/categories.json"
+    urlForPosts: "https://www.funkypenguin.co.nz/assets/posts.json"
+    urlForTags: "https://www.funkypenguin.co.nz/assets/tags.json"
+  "release-notes":
+    viewedVersion: "0.89.0"
   "spell-check":
     grammars: [
       "text.plain"
@@ -33,14 +48,3 @@
     ]
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  jekyll: {}
-  "markdown-writer":
-    siteEngine: "jekyll"
-    siteUrl: "https://www.funkypenguin.co.nz"
-    urlForPosts: "https://www.funkypenguin.co.nz/assets/posts.json"
-    urlForTags: "https://www.funkypenguin.co.nz/assets/tags.json"
-    urlForCategories: "https://www.funkypenguin.co.nz/assets/categories.json"
-    siteLocalDir: "/Users/david/Documents/Projects/blog/"
-    siteImagesDir: "images/"
