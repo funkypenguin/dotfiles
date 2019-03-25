@@ -22,3 +22,7 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
 alias ge='git-edit-new'
+
+alias gsl='git log --oneline --decorate -20'
+alias gsla='git log --oneline --decorate --graph --all -20'
+alias gslap='git log --oneline --decorate --graph --all'
