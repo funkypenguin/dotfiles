@@ -1,1 +1,0 @@
-source <(sensuctl completion zsh)

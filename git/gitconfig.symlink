@@ -6,6 +6,7 @@
 [user]
 	name = David Young
 	email = davidy@funkypenguin.co.nz
+	signingkey = 525EF417604A0541
 [credential]
         helper = osxkeychain
 [alias]
@@ -41,3 +42,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true
