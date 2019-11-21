@@ -4,6 +4,35 @@
 
 set -e
 
+# Install basic casks
+# https://hackernoon.com/personal-macos-workspace-setup-adf61869cd79
+declare -a taps=(
+  'buo/cask-upgrade'
+  'caskroom/cask'
+  'caskroom/versions'
+  'homebrew/bundle'
+  'homebrew/core'
+)
+
+for tap in "${taps[@]}"; do
+  brew tap "$tap"
+done
+
+brew upgrade && brew update && brew install cask
+
+# Install cask apps
+declare -a cask_apps=(
+  ‘google-chrome’
+  ‘iterm2-nightly’
+  ‘postman’
+)
+
+for app in "${cask_apps[@]}"; do
+  brew cask install "$app"
+done
+
+
+
 cd "$(dirname $0)"/..
 
 # find the installers and run them iteratively
