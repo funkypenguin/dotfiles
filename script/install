@@ -34,6 +34,25 @@ for app in "${cask_apps[@]}"; do
   brew cask install "$app"
 done
 
+# Install stuff from mac app store
+brew install mas
+
+declare -a mas_apps=(
+  '824171161'   # Affinity Designer
+  '918858936'   # Airmail 3
+  '1091189122'  # Bear
+  '736584830'   # Folx GO
+  '775737590'   # iA Writer
+  '441258766'   # Magnet
+  '1063631769'  # Medis
+  '967805235'   # Paste
+  '583827028'   # WinZip
+)
+
+for app in "${mas_apps[@]}"; do
+  mas install "$app"
+done
+
 
 
 cd "$(dirname $0)"/..
