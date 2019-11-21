@@ -28,6 +28,20 @@ declare -a cask_apps=(
   'azure-cli'
   'google-cloud-skd'
   'awscli'
+  'dropbox'
+  'teamviewer'
+  'powershell'
+  'calibre'
+  'github'
+  'kubecontext'
+  'signal'
+  'vagrant'
+  'discord'
+  'skype'
+  'docker'
+  'gpg-suite-no-mail'
+  'visual-studio-code'
+  'synology-drive'
 )
 
 for app in "${cask_apps[@]}"; do
