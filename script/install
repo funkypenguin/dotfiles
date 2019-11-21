@@ -24,6 +24,10 @@ declare -a cask_apps=(
   'google-chrome'
   'iterm2'
   'postman'
+  'spotify'
+  'azure-cli'
+  'google-cloud-skd'
+  'awscli'
 )
 
 for app in "${cask_apps[@]}"; do
