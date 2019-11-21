@@ -8,8 +8,7 @@ set -e
 # https://hackernoon.com/personal-macos-workspace-setup-adf61869cd79
 declare -a taps=(
   'buo/cask-upgrade'
-  'homebrew/cask-cask'
-  'caskroom/versions'
+  'homebrew/cask-versions'
   'homebrew/bundle'
   'homebrew/core'
 )
