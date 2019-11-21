@@ -8,7 +8,7 @@ set -e
 # https://hackernoon.com/personal-macos-workspace-setup-adf61869cd79
 declare -a taps=(
   'buo/cask-upgrade'
-#  'homebrew/cask-versions'
+  'homebrew/cask-versions'
   'homebrew/bundle'
   'homebrew/core'
 )
@@ -21,9 +21,9 @@ brew upgrade && brew update && brew install cask
 
 # Install cask apps
 declare -a cask_apps=(
-  ‘google-chrome’
-  ‘iterm2-nightly’
-  ‘postman’
+  'google-chrome'
+  'iterm2'
+  'postman'
 )
 
 for app in "${cask_apps[@]}"; do
