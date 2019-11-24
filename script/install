@@ -17,6 +17,15 @@ for tap in "${taps[@]}"; do
   brew tap "$tap"
 done
 
+# Install basics
+declare -a brews=(
+  'kubectl'
+)
+
+for brew in "${brews[@]}"; do
+  brew install "$brew"
+done
+
 brew upgrade && brew update && brew install cask
 
 # Install cask apps
@@ -25,9 +34,8 @@ declare -a cask_apps=(
   'iterm2'
   'postman'
   'spotify'
-  'azure-cli'
-  'google-cloud-skd'
-  'awscli'
+  'google-cloud-sdk'
+#  'awscli'
   'dropbox'
   'teamviewer'
   'powershell'
@@ -41,7 +49,10 @@ declare -a cask_apps=(
   'docker'
   'gpg-suite-no-mail'
   'visual-studio-code'
-  'synology-drive'
+  'fly'
+#  'synology-drive'
+#  'azure-cli'
+#  'awscli'
 )
 
 for app in "${cask_apps[@]}"; do
@@ -52,21 +63,40 @@ done
 brew install mas
 
 declare -a mas_apps=(
-  '824171161'   # Affinity Designer
-  '918858936'   # Airmail 3
-  '1091189122'  # Bear
-  '736584830'   # Folx GO
-  '775737590'   # iA Writer
-  '441258766'   # Magnet
-  '1063631769'  # Medis
-  '967805235'   # Paste
-  '583827028'   # WinZip
+  '803453959'   # Slack
+  '904280696'   # Things (3.10.1)
+  '409183694'   # Keynote (9.2.1)
+  '1319778037'  # iStat Menus (6.40)
+  '441258766'   # Magnet (2.4.5)
+  '462058435'   # Microsoft Excel (16.31)
+  '540348655'   # Monosnap (3.6.4)
+  '1333542190'  # 1Password 7 (7.4.1)
+  '462062816'   # Microsoft PowerPoint (16.31)
+  '1176074088'  # Termius (4.9.20)
+  '985367838'   # Microsoft Outlook (16.31)
+  '948176063'   # Boom 2 (1.6.8)
+  '409201541'   # Pages (8.2.1)
+  '736189492'   # Notability (4.1.3)
+  '1481302432'  # Instapaper (1.0)
+  '506189836'   # Harvest (2.1.16)
+  '408981434'   # iMovie (10.1.13)
+  '1295203466'  # Microsoft Remote Desktop (10.3.5)
+  '1176895641'  # Spark (2.3.15)
+  '1477385213'  # Save to Pocket (1.1)
+  '803453959'   # Slack (4.1.2)
+  '1055511498'  # Day One (4.2.3)
+  '462054704'   # Microsoft Word (16.31)
+  '1225570693'  # Ulysses (18.3)
+  '1385985095'  # uBlock (1.3)
+  '1450504903'  # Night Eye (3.8.3)
 )
 
 for app in "${mas_apps[@]}"; do
   mas install "$app"
 done
 
+# Install zgen
+git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
 
 
 cd "$(dirname $0)"/..
