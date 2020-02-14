@@ -11,6 +11,7 @@ declare -a taps=(
   'homebrew/cask-versions'
   'homebrew/bundle'
   'homebrew/core'
+  'instrumenta/instrumenta'
 )
 
 for tap in "${taps[@]}"; do
@@ -20,6 +21,17 @@ done
 # Install basics
 declare -a brews=(
   'kubectl'
+  'nmap'
+  'rbenv'
+  'azure-cli'
+  'ansible'
+  'helm'
+  'kubeval'
+  'vault'
+  'wget'
+  'mveritym/homebrew-mel/kubedecode'
+  'int128/kubelogin/kubelogin'
+  'kube-score/tap/kube-score'
 )
 
 for brew in "${brews[@]}"; do
@@ -32,8 +44,10 @@ brew upgrade && brew update && brew install cask
 declare -a cask_apps=(
   'google-chrome'
   'iterm2'
+  'java8'
   'postman'
   'spotify'
+  'zoom'
   'google-cloud-sdk'
 #  'awscli'
   'dropbox'
@@ -50,8 +64,7 @@ declare -a cask_apps=(
   'gpg-suite-no-mail'
   'visual-studio-code'
   'fly'
-#  'synology-drive'
-#  'azure-cli'
+  'homebrew/cask-drivers/synology-drive'
 #  'awscli'
 )
 
