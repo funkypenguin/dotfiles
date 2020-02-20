@@ -31,6 +31,7 @@ declare -a brews=(
   'wget'
   'mveritym/homebrew-mel/kubedecode'
   'int128/kubelogin/kubelogin'
+  'install nektos/tap/act'
   'kube-score/tap/kube-score'
 )
 
