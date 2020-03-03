@@ -65,7 +65,9 @@ declare -a cask_apps=(
   'gpg-suite-no-mail'
   'visual-studio-code'
   'fly'
+  'keybase'
   'homebrew/cask-drivers/synology-drive'
+  'ledger-live'
 #  'awscli'
 )
 
