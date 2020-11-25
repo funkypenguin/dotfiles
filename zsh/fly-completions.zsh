@@ -1,1 +1,1 @@
-# source <(fly completion --shell bash)
+source <(fly completion --shell zsh)

@@ -7,6 +7,7 @@ set -e
 # Install basic casks
 # https://hackernoon.com/personal-macos-workspace-setup-adf61869cd79
 declare -a taps=(
+  'helm/tap'
   'buo/cask-upgrade'
   'homebrew/cask-versions'
   'homebrew/bundle'
@@ -20,19 +21,25 @@ done
 
 # Install basics
 declare -a brews=(
+  'gnu-tar'
+  'doctl'
   'kubectl'
   'nmap'
   'rbenv'
   'azure-cli'
   'ansible'
+  'terraform'
   'helm'
   'kubeval'
   'vault'
+  'istioctl'
   'wget'
   'mveritym/homebrew-mel/kubedecode'
   'int128/kubelogin/kubelogin'
   'install nektos/tap/act'
   'kube-score/tap/kube-score'
+  'chart-releaser'
+  'github/gh/gh'
 )
 
 for brew in "${brews[@]}"; do

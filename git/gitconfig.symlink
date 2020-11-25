@@ -8,7 +8,7 @@
 	email = davidy@funkypenguin.co.nz
 	signingkey = 525EF417604A0541
 [credential]
-        helper = osxkeychain
+	helper = cache --timeout=2628000
 [alias]
         co = checkout
         promote = !$ZSH/bin/git-promote
@@ -44,3 +44,5 @@
 	required = true
 [commit]
 	gpgsign = true
+[pull]
+	rebase = false
