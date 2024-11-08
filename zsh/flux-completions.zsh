@@ -1,1 +1,0 @@
-source <(flux completion zsh)

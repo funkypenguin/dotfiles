@@ -1,1 +1,1 @@
-export KUBECONFIG=~/.kube/config:~/.kube/prod-config:~/.kube/dev-config:~/.kube/kubeconfig:~/.kube/multipass-config
+export KUBECONFIG=~/.kube/config:~/.kube/prod-config:~/.kube/dev-config:~/.kube/kubeconfig:~/.kube/config-elfhosted:~/.kube/k8s-cluster-internal:~/.kube/ci-elfhosted.com-oidc:~/.kube/k8s-cluster-g3rg.org:~/.kube/elpenguino.net-cluster:~/.kube/blutui:~/.kube/dskaggs:~/.kube/elfhosted.com-oidc:~/.kube/fractal:~/.kube/pterofractal-prod:~/.kube/pterofractal-dev

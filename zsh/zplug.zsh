@@ -1,8 +1,8 @@
-export ZPLUG_HOME=/usr/local/opt/zplug
+export ZPLUG_HOME=/opt/homebrew/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 zplug "plugins/git", 	  from:oh-my-zsh
-zplug "plugins/vagrant",   from:oh-my-zsh
+# zplug "plugins/vagrant",   from:oh-my-zsh
 zplug "plugins/docker",   from:oh-my-zsh
 zplug "plugins/kubectl",   from:oh-my-zsh
 

@@ -4,119 +4,121 @@
 
 set -e
 
-# Install basic casks
-# https://hackernoon.com/personal-macos-workspace-setup-adf61869cd79
-declare -a taps=(
-  'helm/tap'
-  'buo/cask-upgrade'
-  'homebrew/cask-versions'
-  'homebrew/bundle'
-  'homebrew/core'
-  'instrumenta/instrumenta'
-)
+# # Install basic casks
+# # https://hackernoon.com/personal-macos-workspace-setup-adf61869cd79
+# declare -a taps=(
+#   'helm/tap'
+#   'buo/cask-upgrade'
+#   'homebrew/cask-versions'
+#   'homebrew/bundle'
+#   'homebrew/core'
+#   'instrumenta/instrumenta'
+# )
 
-for tap in "${taps[@]}"; do
-  brew tap "$tap"
-done
+# for tap in "${taps[@]}"; do
+#   brew tap "$tap"
+# done
 
-# Install basics
-declare -a brews=(
-  'gnu-tar'
-  'doctl'
-  'kubectl'
-  'nmap'
-  'rbenv'
-  'azure-cli'
-  'ansible'
-  'terraform'
-  'helm'
-  'kubeval'
-  'vault'
-  'istioctl'
-  'wget'
-  'mveritym/homebrew-mel/kubedecode'
-  'int128/kubelogin/kubelogin'
-  'install nektos/tap/act'
-  'kube-score/tap/kube-score'
-  'chart-releaser'
-  'github/gh/gh'
-)
+# # Install basics
+# declare -a brews=(
+#   'gnu-tar'
+#   'doctl'
+#   'kubectl'
+#   'nmap'
+#   'rbenv'
+#   'azure-cli'
+#   'ansible'
+#   'terraform'
+#   'helm'
+#   'kubeval'
+#   'vault'
+#   'istioctl'
+#   'wget'
+#   'mveritym/homebrew-mel/kubedecode'
+#   'int128/kubelogin/kubelogin'
+#   'install nektos/tap/act'
+#   'kube-score/tap/kube-score'
+#   'chart-releaser'
+#   'github/gh/gh'
+# )
 
-for brew in "${brews[@]}"; do
-  brew install "$brew"
-done
+# for brew in "${brews[@]}"; do
+#   brew install "$brew"
+# done
 
-brew upgrade && brew update && brew install cask
+# brew upgrade && brew update && brew install cask
 
-# Install cask apps
-declare -a cask_apps=(
-  'google-chrome'
-  'iterm2'
-  'java8'
-  'postman'
-  'spotify'
-  'zoom'
-  'google-cloud-sdk'
-#  'awscli'
-  'dropbox'
-  'teamviewer'
-  'powershell'
-  'calibre'
-  'github'
-  'kubecontext'
-  'signal'
-  'vagrant'
-  'discord'
-  'skype'
-  'docker'
-  'gpg-suite-no-mail'
-  'visual-studio-code'
-  'fly'
-  'keybase'
-  'homebrew/cask-drivers/synology-drive'
-  'ledger-live'
-#  'awscli'
-)
+# # Install cask apps
+# declare -a cask_apps=(
+#   'google-chrome'
+#   'iterm2'
+#   'java8'
+#   'postman'
+#   'spotify'
+#   'zoom'
+#   'google-cloud-sdk'
+# #  'awscli'
+#   'dropbox'
+#   'teamviewer'
+#   'powershell'
+#   'calibre'
+#   'github'
+#   'kubecontext'
+#   'signal'
+#   'vagrant'
+#   'discord'
+#   'skype'
+#   'docker'
+#   'gpg-suite-no-mail'
+#   'visual-studio-code'
+#   'fly'
+#   'keybase'
+#   'homebrew/cask-drivers/synology-drive'
+#   'ledger-live'
+    # 'homebrew/cask/docker'
+# #  'awscli'
+    # gsed
+# )
 
-for app in "${cask_apps[@]}"; do
-  brew cask install "$app"
-done
+# for app in "${cask_apps[@]}"; do
+#   brew cask install "$app"
+# done
 
-# Install stuff from mac app store
-brew install mas
+# # Install stuff from mac app store
+# brew install mas
 
-declare -a mas_apps=(
-  '803453959'   # Slack
-  '904280696'   # Things (3.10.1)
-  '409183694'   # Keynote (9.2.1)
-  '1319778037'  # iStat Menus (6.40)
-  '441258766'   # Magnet (2.4.5)
-  '462058435'   # Microsoft Excel (16.31)
-  '540348655'   # Monosnap (3.6.4)
-  '1333542190'  # 1Password 7 (7.4.1)
-  '462062816'   # Microsoft PowerPoint (16.31)
-  '1176074088'  # Termius (4.9.20)
-  '985367838'   # Microsoft Outlook (16.31)
-  '948176063'   # Boom 2 (1.6.8)
-  '409201541'   # Pages (8.2.1)
-  '736189492'   # Notability (4.1.3)
-  '1481302432'  # Instapaper (1.0)
-  '506189836'   # Harvest (2.1.16)
-  '408981434'   # iMovie (10.1.13)
-  '1295203466'  # Microsoft Remote Desktop (10.3.5)
-  '1176895641'  # Spark (2.3.15)
-  '1477385213'  # Save to Pocket (1.1)
-  '803453959'   # Slack (4.1.2)
-  '1055511498'  # Day One (4.2.3)
-  '462054704'   # Microsoft Word (16.31)
-  '1225570693'  # Ulysses (18.3)
-  '1385985095'  # uBlock (1.3)
-  '1450504903'  # Night Eye (3.8.3)
-)
+# declare -a mas_apps=(
+#   '803453959'   # Slack
+#   '904280696'   # Things (3.10.1)
+#   '409183694'   # Keynote (9.2.1)
+#   '1319778037'  # iStat Menus (6.40)
+#   '441258766'   # Magnet (2.4.5)
+#   '462058435'   # Microsoft Excel (16.31)
+#   '540348655'   # Monosnap (3.6.4)
+#   '1333542190'  # 1Password 7 (7.4.1)
+#   '462062816'   # Microsoft PowerPoint (16.31)
+#   '1176074088'  # Termius (4.9.20)
+#   '985367838'   # Microsoft Outlook (16.31)
+#   '948176063'   # Boom 2 (1.6.8)
+#   '409201541'   # Pages (8.2.1)
+#   '736189492'   # Notability (4.1.3)
+#   '1481302432'  # Instapaper (1.0)
+#   '506189836'   # Harvest (2.1.16)
+#   '408981434'   # iMovie (10.1.13)
+#   '1295203466'  # Microsoft Remote Desktop (10.3.5)
+#   '1176895641'  # Spark (2.3.15)
+#   '1477385213'  # Save to Pocket (1.1)
+#   '803453959'   # Slack (4.1.2)
+#   '1055511498'  # Day One (4.2.3)
+#   '462054704'   # Microsoft Word (16.31)
+#   '1225570693'  # Ulysses (18.3)
+#   '1385985095'  # uBlock (1.3)
+#   '1450504903'  # Night Eye (3.8.3)
+# )
 
-for app in "${mas_apps[@]}"; do
-  mas install "$app"
-done
+# for app in "${mas_apps[@]}"; do
+#   mas install "$app"
+# done
 
 # Install zgen
 git clone https://github.com/tarjoilija/zgen.git "${HOME}/.zgen"
